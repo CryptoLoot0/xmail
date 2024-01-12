@@ -1,0 +1,277 @@
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  /* font-family: PingFang SC, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F0F0F0;
+  overflow-x: hidden;
+  color: #38302E;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+iframe {
+  display: none!important;
+}
+
+p,
+ul,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  user-select: none;
+}
+
+select,
+input {
+  outline: none;
+}
+
+.common-dialog .MuiPaper-root {
+  max-width: inherit;
+}
+
+.common-dialog .MuiDialogActions-root {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.chunks {
+  padding: 14px 30px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.copy {
+  margin-left: 8px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAcJJREFUWEftl7tLw1AUxr+T2L9AXEU7inlIh7ZUUAdBBwcRxc3NwcHJUejk6OjgfyC0Ijg5CC2oGIXSPNTNB3XUyVWTK0lNS59JG2w65I6559zzy3fvzflCCHlQyPXRFiAlT88HARsxqXJtGC9+1mgASMliFgwrICT8JHeNYThlDPk7XT/pFtcM8ApgInBxdwGGC0XTl30BVGXnCtVgayEYBGUBcrZRUfWu56w22QygqA/FfiFSslAYOoBMYmr8pvRUaX6pgSnwp/A6Mbq81bQzF2TQAAWAFRXVqJ2xEAAAMpl4axiGrUIoAPYtcw95BBApECkQKTA8CswKQvyHp+dqk2B9t+J6t3P8wJui6pP2s07tvtERSWIehLV+fUCbvH1F1Q98AyRFcZMIWyAsBYT4AJADrJz7zfelQMCiXdOTkrBNRMeO4SNTvi8/ag3d8D+LO1swI547jhvANx8bK5VKn54Ato0yTS4eDI6bA7AIIFNdh3KKqm20OKJORVKyeARgJxhEPbvZJXv+mqUlaZWRteu63L5BGA4VTd/raEq9Fk4LgsB4NuoV1zJvcV8xnn+/Kpftm9EyPBXouWCPCaED/AIulVYwZeWy3gAAAABJRU5ErkJggg==) no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 240px;
+  margin: 0px auto;
+  box-sizing: border-box;
+  line-height: 48px;
+  padding-left: 50px;
+  border-radius: 36px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.5s ease 0s;
+  overflow: hidden;
+}
+.login-btn-main {
+  background: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+}
+.login-btn-main:hover {
+  background: #000;
+}
+.login-btn.disabled {
+  cursor: not-allowed;
+}
+.login-btn.disabled:hover {
+  transition: none;
+}
+.login-btn-main.disabled:hover {
+  background: rgb(51, 51, 51);
+}
+.login-btn strong {
+  font-weight: normal;
+}
+.login-btn i {
+  width: 27px;
+  height: 25px;
+  margin-right: 15px;
+  background: no-repeat center;
+}
+.login-btn .metamask {
+  background-image: url(../images/login-metamask.png);
+  background-size: 27px 25px;
+}
+.login-btn .bnb {
+  background-image: url(../images/bnb.png);
+  background-size: 23px 27px;
+}
+
+.login-btn .bitkeep {
+  background-image: url(../images/login-bitkeep.svg);
+  background-size: 23px 23px;
+}
+
+.login-btn .plug {
+  background-image: url(../images/login-plug2.png);
+  background-size: 27px 27px;
+}
+
+.login-btn .infinityswap {
+  background-image: url(../images/infinityswap-logo.png);
+  background-size: 30px 23px;
+}
+
+.login-btn .identity {
+  background-image: url(../images/login-identity.png);
+  background-size: 27px 15px;
+}
+.login-btn .loading {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+.login-btn .loading .MuiCircularProgress-svg {
+  color: #fff;
+}
+
+.dmail-ava {
+  width: 43px;
+  height: 38px;
+  background: url(../images/b.png);
+  background-size: 100%;
+}
+.dmail-ava.e {
+  background-image: url(../images/e.png);
+}
+.dmail-ava.d {
+  background-image: url(../images/d.png);
+}
+
+/* @font-face {
+  font-family: "League Spartan-Regular";
+  src: url(../font/LeagueSpartan-Regular.ttf);
+  src: url(../font/LeagueSpartan-Regular.ttf)  format('truetype'),
+  url('../font/LeagueSpartan-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: "League Spartan-Bold";
+  src: url(../font/LeagueSpartan-SemiBold.ttf);
+  src: url(../font/LeagueSpartan-SemiBold.ttf)  format('truetype'),
+  url('../font/LeagueSpartan-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: "League Spartan-Medium";
+  src: url(../font/LeagueSpartan-Medium.ttf);
+  src: url(../font/LeagueSpartan-Medium.ttf)  format('truetype'),
+  url('../font/LeagueSpartan-Medium.woff') format('woff');
+} */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../font2/Roboto-Black.ttf);
+  src: url(../font2/Roboto-Black.ttf)  format('truetype'),
+  url('../font2/roboto-black.woff') format('woff');
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url('../font2/Roboto-Bold.ttf');
+  src: url('../font2/Roboto-Bold.ttf')  format('truetype'),
+        url('../font2/roboto-bold.woff') format('woff');
+}
+@font-face {
+      font-family: "Montserrat-Light";
+      src: url(../font2/Roboto-Light.ttf);
+      src: url(../font2/Roboto-Light.ttf)  format('truetype'),
+            url('../font2/roboto-light.woff') format('woff');
+}
+@font-face {
+      font-family: "Montserrat-Medium";
+      src: url(../font2/Roboto-Medium.ttf);
+      src: url(../font2/Roboto-Medium.ttf)  format('truetype'),
+            url(../font2/roboto-medium.woff)  format('woff');
+}
+@font-face {
+      font-family: "Montserrat-Regular";
+      src: url(../font2/Roboto-Regular.ttf);
+      src: url(../font2/Roboto-Regular.ttf)  format('truetype'),
+          url(../font2/roboto-regular.woff)  format('woff');
+}
+@font-face {
+      font-family: "Montserrat-Thin";
+      src: url(../font2/Roboto-Thin.ttf);
+      src: url(../font2/Roboto-Thin.ttf)  format('truetype'),
+        url(../font2/roboto-thin.woff)  format('woff');
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../font2/Roboto-Black.ttf);
+  src: url(../font2/Roboto-Black.ttf)  format('truetype'),
+  url('../font2/roboto-black.woff') format('woff');
+  
+}
+@font-face {
+      font-family: "Roboto-Bold";
+      src: url('../font2/Roboto-Bold.ttf');
+      src: url('../font2/Roboto-Bold.ttf')  format('truetype'),
+            url('../font2/roboto-bold.woff') format('woff');
+}
+@font-face {
+      font-family: "Roboto-Light";
+      src: url(../font2/Roboto-Light.ttf);
+      src: url(../font2/Roboto-Light.ttf)  format('truetype'),
+            url('../font2/roboto-light.woff') format('woff');
+}
+@font-face {
+      font-family: "Roboto-Medium";
+      src: url(../font2/Roboto-Medium.ttf);
+      src: url(../font2/Roboto-Medium.ttf)  format('truetype'),
+            url(../font2/roboto-medium.woff)  format('woff');
+}
+@font-face {
+      font-family: "Roboto-Regular";
+      src: url(../font2/Roboto-Regular.ttf);
+      src: url(../font2/Roboto-Regular.ttf)  format('truetype'),
+          url(../font2/roboto-regular.woff)  format('woff');
+      
+}
+@font-face {
+      font-family: "Roboto-Thin";
+      src: url(../font2/Roboto-Thin.ttf);
+      src: url(../font2/Roboto-Thin.ttf)  format('truetype'),
+        url(../font2/roboto-thin.woff)  format('woff');
+      
+}
